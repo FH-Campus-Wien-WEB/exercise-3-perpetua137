@@ -30,22 +30,63 @@ ul {
 }
 
 /* Task 2.1. Lay out the childs of the 'body' using Grid Template Areas. */
+body {
+  margin: 0;
+}
 
+/* Desktop layout */
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "h h"
+      "n m"
+      "f f";
+    height: 100vh;
+  }
+
+  header { grid-area: h; }
+  nav    { grid-area: n; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
+}
+
+/* Important for scrolling */
+main {
+  overflow-y: auto;
+}
 
 /* Task 3.1. Make the header element a flex container and center its children
    vertically and horizontally.
  */
-
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Task 3.2. Make the list items of the unordered list in the nav element a flex container, 
    use column direction and center the child items
  */
-
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* Task 3.3. Make the main element a Flexbox container */
-
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /* Task 3.4. Make the footer's ul a Flexbox container */
-
+footer {
+  display: flex;
+  justify-content: center;
+}
 
 /* From here on styling from exercise 1 */
 img {
@@ -74,4 +115,44 @@ span {
   border-radius: 6px;
   background-color: darkgray;
   font-weight: bold;
+}
+
+h1 {
+  font-size: 200%;
+  margin: 8px 0px;
+}
+
+img {
+  border-radius: 12px;
+}
+
+article {
+  background-color: lightgray;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 2vw;
+}
+
+span {
+  margin-right: 4px;
+}
+
+.genre {
+  padding: 4px 8px;
+  border: solid black 1px;
+  border-radius: 6px;
+  background-color: darkgray;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
 }
