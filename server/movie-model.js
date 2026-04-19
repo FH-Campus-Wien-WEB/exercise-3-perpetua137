@@ -1,4 +1,49 @@
 module.exports = {
+  tdwp12345: {
+    imdbID: "tdwp12345",
+    Title:"The Devil Wears Prada",
+    Released:"2006-06-30",
+    Runtime: 109,
+    Genres: ["Comedy","Drama"],
+    Directors:["David", "Frankel"],
+    Writers:["Aline Brosh McKenna","Lauren Weisberger"],
+    Actors:["Anne Hathaway","Meryl Streep","Adrian Grenier"],
+    Plot: "With an aspiration to become a journalist, Andy, a smart but sensible young graduate, travels to New York. She starts working as an assistant to one of the city's biggest high fashion magazine editors, the cynical Miranda Priestly.",
+    Poster: "https://m.media-amazon.com/images/M/MV5BOWM3NTI3YWEtYjJmMy00M2U5LWI1NzEtZWM3ZDY2ZWNjOGRiXkEyXkFqcGc@._V1_SX300.jpg",
+    Metascore: 62,
+    imdbRating: 7.0,
+  },
+
+  mm12345: {
+    imdbID: "mm12345",
+    Title:"Murder Mystery",
+    Released:"2019-06-14",
+    Runtime: 97,
+    Genres:["Crime","Mystery","Romance"],
+    Directors:["Kyle Newacheck"],
+    Writers:["James Vanderbilt"],
+    Actors:["Adam Sandler","Jennifer Aniston","Luke Evans"],
+    Plot:"A New York cop and his wife go on a European vacation to reinvigorate the spark in their marriage, but end up getting framed and on the run for the death of an elderly billionaire.",
+    Poster:"https://m.media-amazon.com/images/M/MV5BMzg4NDFjNmYtZjQxMy00MDY4LWEyZjUtYzRjNjNkNjJiZTZhXkEyXkFqcGc@._V1_SX300.jpg",
+    Metascore:38,
+    imdbRating:6.1,
+  }, 
+
+  rn12345: {
+    imdbID: "rn12345",
+    Title:"Red Notice",
+    Released:"2011-11-12",
+    Runtime:118,
+    Genres:["Action", "Comedy", "Thriller"],
+    Directors:["Rawson Marshall Thurber"],
+    Writers:["Rawson Marshall Thurber"],
+    Actors:["Dwayne Johnson", "Ryan Reynolds","Gal Gadot"],
+    Plot:"An Interpol agent successfully tracks down the world's most wanted art thief with help from a rival thief. But nothing is as it seems as a series of double-crosses ensues.",
+    Poster: "https://m.media-amazon.com/images/M/MV5BOGNjNGQ3MmItYTM5NS00NjBiLWI0ZTItZDE5ZjQyNjg3ODBjXkEyXkFqcGc@._V1_SX300.jpg",
+    Metascore:37,
+    imdbRating:6.3,
+  }, 
+
   tt0084787: {
     imdbID: "tt0084787",
     Title: "The Thing",
@@ -14,6 +59,7 @@ module.exports = {
     Metascore: 57,
     imdbRating: 8.2,
   },
+
   tt0120737: {
     imdbID: "tt0120737",
     Title: "The Lord of the Rings: The Fellowship of the Ring",
@@ -29,6 +75,7 @@ module.exports = {
     Metascore: 92,
     imdbRating: 8.8,
   },
+
   tt0085959: {
     imdbID: "tt0085959",
     Title: "The Meaning of Life",
@@ -44,6 +91,7 @@ module.exports = {
     Metascore: 72,
     imdbRating: 7.5,
   },
+
   tt0107048: {
     imdbID: "tt0107048",
     Title: "Groundhog Day",
@@ -59,6 +107,7 @@ module.exports = {
     Metascore: 72,
     imdbRating: 8.1,
   },
+
   tt0124315: {
     imdbID: "tt0124315",
     Title: "The Cider House Rules",
@@ -74,6 +123,7 @@ module.exports = {
     Metascore: 75,
     imdbRating: 7.4,
   },
+
   tt0248808: {
     imdbID: "tt0248808",
     Title: "For the Birds",

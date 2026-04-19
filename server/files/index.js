@@ -63,6 +63,10 @@ function loadMovies(genre) {
   const url = new URL("/movies", location.href)
   /* Task 1.4. Add query parameter to the url if a genre is given */
 
+  if (genre) {
+    url.searchParams.set("genre", genre)
+  } 
+
   xhr.open("GET", url)
   xhr.send()
 }
@@ -71,19 +75,38 @@ window.onload = function () {
   const xhr = new XMLHttpRequest();
   xhr.onload = function () {
     const listElement = document.querySelector("nav>ul");
-
     if (xhr.status === 200) {
       /* Task 1.3. Add the genre buttons to the listElement and 
          initialize them with a click handler that calls the 
          loadMovies(...) function above. */
       const genres = JSON.parse(xhr.responseText);
 
+      // 🔹 "All" button
+      const allLi = document.createElement("li");
+      const allBtn = document.createElement("button");
+      allBtn.textContent = "All";
+      allBtn.addEventListener("click", () => loadMovies(null));
+      allLi.appendChild(allBtn);
+      listElement.appendChild(allLi);
+
+      // 🔹 Genre buttons
+      genres.forEach(genre => {
+        const li = document.createElement("li");
+        const btn = document.createElement("button");
+
+        btn.textContent = genre;
+        btn.addEventListener("click", () => loadMovies(genre));
+
+        li.appendChild(btn);
+        listElement.appendChild(li);
+      });
+
       /* When a first button exists, we click it to load all movies. */
       const firstButton = document.querySelector("nav button");
       if (firstButton) {
-        firstButton.click();
+        firstButton.click();} 
       }
-    } else {
+      else {
       document.querySelector("body").append(`Daten konnten nicht geladen werden, Status ${xhr.status} - ${xhr.statusText}`);
     }
   };
